@@ -1,24 +1,136 @@
 /* I. Selectors */
 /* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+article {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid black;
+    }
+.style-me1 {
+    color: red;
+  }
+#style-me2 {
+    color: blue;
+  }
+.style-me1 + #style-me2 {
+        color: purple;
+      }
 
 /* Put styles for questions 2.1 and 2.2 here */
-
+.my-descendants-are-styled > p {
+    background-color:red;
+}
+.my-children-are-styled > p {
+    background-color: lightgreen;
+}
 
 /* II. Box model and common properties */
 /* Put styles for questions 1-8 here */
-
+.box {
+    background-color:yellowgreen;
+    margin: 4px;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    overflow: scroll;
+    height: 50px !important;
+    width: 500px;
+    /* outline: 10px;
+    outline-style: solid; */
+    border-radius:20ems;
+    background-image: url('./assets/images/img1.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
 
 /* III. Positioning */
 /* Put styles for questions 1-3 here */
-
+.position-absolute {
+position:absolute;
+bottom: 0px;
+background-color: brown;
+left:50px;
+right:50px;
+}
+.position-relative {
+  position:absolute;
+  background-color:blueviolet;
+}
+.position-sticky {
+  background-color:aquamarine;
+  position: sticky;
+  top:0px;
+}
 
 /* IV. Styling text */
+
+.text-style {
+color: blueviolet;
+font-size: large;
+line-height: normal;
+font-family: "Madimi One", sans-serif;
+font-weight: 400;
+font-style: normal;
+text-align: center;
+letter-spacing: 3px;
+word-spacing: 30px;
+text-transform: uppercase;
+text-decoration-line: overline underline;
+text-decoration-color: green;
+text-decoration-style: wavy;
+text-decoration-thickness: 5px;
+text-decoration: underline red double 5px;
+}
+
+
 /* Put styles for questions 1-10 here */
 
 
 /* V. Styling links */
 /* Put styles for questions 1-3 here */
 
+/* unvisited link */
+a:link {
+  font-size:large;
+  font-weight:100;
+  text-decoration: dashed hotpink 5px;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+
 
 /* VI. calc() */
 /* Put styles for questions 1-3 here */
+.calc-style {
+  width: 100vw; 
+  background-color: #0000FF;
+  width: calc(100vw - 100px); 
+}
+
+.fixed-width-col {
+  width: 350px;
+  display: inline-block;
+  background-color: goldenrod;
+}
+
+.fluid-col {
+  display: inline-block;
+  background-color: grey;
+  width: calc(100vw - 450px); 
+}
+.calc-row{
+  display:inline-flex;
+}
